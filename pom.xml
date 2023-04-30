@@ -1,9 +1,78 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.archeruu.parent</groupId>
+
+  <groupId>com.archeruu</groupId>
   <artifactId>archeruu-parent</artifactId>
   <version>1.0.0</version>
-  <name>Archetype - archeruu-parent</name>
-  <url>http://maven.apache.org</url>
+  <packaging>pom</packaging>
+
+  <name>archeruu</name>
+  <description>Archeruu是一个不断积累的Java工具类库，封装jdk和各种三方框架的操作，让编码更快更高效。</description>
+  <url>https://archeruu.com</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Archer</name>
+      <email>archeruuu@gmail.com</email>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>archeruu-bom</module>
+    <module>archeruu-core</module>
+    <module>archeruu-extra</module>
+  </modules>
+
+  <properties>
+    <!--设置编码版本-->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+
+    <!--springboot version-->
+    <spring-boot.version>2.7.11</spring-boot.version>
+
+    <!-- versions -->
+    <junit.version>5.8.2</junit.version>
+    <lombok.version>1.18.26</lombok.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <!-- Import dependency management from Spring Boot -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <!-- 全局单元测试 -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
 </project>

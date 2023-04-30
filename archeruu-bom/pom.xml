@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>archeruu-bom</artifactId>
+    <packaging>pom</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>Archeruu 模块清单</description>
+
+    <parent>
+        <groupId>com.archeruu</groupId>
+        <artifactId>archeruu-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.archeruu</groupId>
+                <artifactId>archeruu-core</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.archeruu</groupId>
+                <artifactId>archeruu-extra</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.archeruu</groupId>
+            <artifactId>archeruu-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.archeruu</groupId>
+            <artifactId>archeruu-extra</artifactId>
+        </dependency>
+    </dependencies>
+</project>
