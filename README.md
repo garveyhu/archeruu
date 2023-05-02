@@ -18,7 +18,7 @@ Archeruu是一个不断积累的工具库，对各种场景技术栈进行高可
 | archeruu-extra | 拓展                             |
 | archeruu-AI    | AI，包括ChatGPT等API操作         |
 
-可以根据需求对每个模块单独引入，也可以通过引入`hutool-bom`方式引入所有模块。
+可以根据需求对每个模块单独引入，也可以通过引入`archeruu-bom`方式引入所有模块。
 
 ## 📦安装
 
