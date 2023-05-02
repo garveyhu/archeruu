@@ -12,8 +12,10 @@
   <url>https://archeruu.com</url>
   <licenses>
     <license>
-      <name>Apache License 2.0</name>
-      <url>http://www.apache.org/licenses/</url>
+      <name>Apache-2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
     </license>
   </licenses>
   <developers>
@@ -27,6 +29,7 @@
     <module>archeruu-bom</module>
     <module>archeruu-core</module>
     <module>archeruu-extra</module>
+    <module>archeruu-AI</module>
   </modules>
 
   <properties>
@@ -48,8 +51,8 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Import dependency management from Spring Boot -->
       <dependency>
-        <!-- Import dependency management from Spring Boot -->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${spring-boot.version}</version>
@@ -71,7 +74,7 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>${lombok.version}</version>
-      <scope>test</scope>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 

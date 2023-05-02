@@ -26,6 +26,11 @@
                 <artifactId>archeruu-extra</artifactId>
                 <version>${project.parent.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.archeruu</groupId>
+                <artifactId>archeruu-AI</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -37,6 +42,10 @@
         <dependency>
             <groupId>com.archeruu</groupId>
             <artifactId>archeruu-extra</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.archeruu</groupId>
+            <artifactId>archeruu-AI</artifactId>
         </dependency>
     </dependencies>
 </project>
