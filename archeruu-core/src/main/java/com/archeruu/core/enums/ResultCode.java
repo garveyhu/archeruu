@@ -21,6 +21,10 @@ public enum ResultCode {
     /* 系统错误 */
     SYSTEM_INNER_ERROR(119, "系统内部错误"),
     SERVER_ERROR(120, "当前服务不可用"),
+
+    /* 参数校检异常 */
+    PARAM_IS_INVALID(900, "参数无效"),
+    PARAM_TYPE_BIND_ERROR(901, "参数格式错误")
     ;
 
 
