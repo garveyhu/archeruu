@@ -31,6 +31,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(CustomException.class)
     public ResultVO<?> handleException(CustomException e) {
         log.error("┗|｀O′|┛ 异常信息: ", e);
+        // 自定义输出异常消息，错误代码111
+        if (e.getResultCode().getCode() == 111) {
+            return ResultVO.create(false, 111, e.getMessage());
+        }
         return ResultVO.create(false, e.getResultCode());
     }
 

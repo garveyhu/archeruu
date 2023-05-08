@@ -18,6 +18,9 @@ public enum ResultCode {
     /* 失败状态码 */
     FAIL(110, "操作失败！"),
 
+    /* 失败状态码 */
+    FAILURE(111, "自定义错误消息"),
+
     /* 系统错误 */
     SYSTEM_INNER_ERROR(119, "系统内部错误"),
     SERVER_ERROR(120, "当前服务不可用"),
@@ -25,6 +28,7 @@ public enum ResultCode {
     /* 参数校检异常 */
     PARAM_IS_INVALID(900, "参数无效"),
     PARAM_TYPE_BIND_ERROR(901, "参数格式错误")
+
     ;
 
 
