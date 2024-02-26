@@ -28,7 +28,7 @@ import static com.theokanning.openai.service.OpenAiService.*;
 public class ChatApiLocalProxyUtil {
 
     public static String chatApi(String content) {
-        String key = "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";
+        String key = "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";
         // 配置 V2ray 代理
         Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890));
         OkHttpClient client = defaultClient(key, Duration.ofMinutes(1))

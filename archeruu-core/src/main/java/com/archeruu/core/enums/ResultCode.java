@@ -27,9 +27,7 @@ public enum ResultCode {
 
     /* 参数校检异常 */
     PARAM_IS_INVALID(900, "参数无效"),
-    PARAM_TYPE_BIND_ERROR(901, "参数格式错误")
-
-    ;
+    PARAM_TYPE_BIND_ERROR(901, "参数格式错误");
 
 
     /**

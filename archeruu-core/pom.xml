@@ -15,8 +15,9 @@
     </parent>
 
     <properties>
-        <fastjson.version>1.2.62</fastjson.version>
-        <pagehelper.version>1.2.12</pagehelper.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <mybatisplus.version>3.4.1</mybatisplus.version>
+        <pagehelper.version>1.4.6</pagehelper.version>
     </properties>
 
     <dependencies>
@@ -32,6 +33,11 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatisplus.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.pagehelper</groupId>
