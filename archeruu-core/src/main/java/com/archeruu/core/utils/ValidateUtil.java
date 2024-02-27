@@ -75,6 +75,7 @@ public class ValidateUtil {
      * @param <E>            错误记录实体类类型
      * @return 校检通过的数据集合
      */
+    @SuppressWarnings("unchecked")
     public static <T, E> List<T> validateAndCache(List<T> data, Class<T> clazz, Class<E> clazz1, Cache<String, List<E>> errorListCache, String key, List<Integer> rowIndexList) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         List<T> validList = new ArrayList<>();
         List<E> errorList = new ArrayList<>();
