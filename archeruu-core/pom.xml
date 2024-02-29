@@ -69,7 +69,7 @@
         <!-- jetcache -->
         <dependency>
             <groupId>com.alicp.jetcache</groupId>
-            <artifactId>jetcache-starter-redis</artifactId>
+            <artifactId>jetcache-starter-redis-springdata</artifactId>
             <version>${jetcache.version}</version>
         </dependency>
         <!-- easyexcel -->

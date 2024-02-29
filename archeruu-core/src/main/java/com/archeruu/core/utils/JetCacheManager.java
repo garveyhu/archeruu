@@ -25,7 +25,7 @@ public class JetCacheManager {
      * @param expireInSeconds 缓存过期时间，单位秒
      * @return 缓存实例
      */
-    public <K, V> Cache<K, V> getOrCreateCache(String key, CacheType cacheType, long expireInSeconds) {
+    public <K, V> Cache<K, V> getOrCreateCache(String key, CacheType cacheType, int expireInSeconds) {
         Cache<K, V> cache = cacheManager.getCache(key);
         if (cache == null) {
             QuickConfig config = QuickConfig
@@ -53,7 +53,7 @@ public class JetCacheManager {
      * @param expireInSeconds 缓存过期时间，单位秒
      * @return 缓存实例
      */
-    public <K, V> Cache<K, V> getOrCreateCache(String key, long expireInSeconds) {
+    public <K, V> Cache<K, V> getOrCreateCache(String key, int expireInSeconds) {
         return getOrCreateCache(key, CacheType.REMOTE, expireInSeconds);
     }
 
@@ -83,7 +83,7 @@ public class JetCacheManager {
      * @param expireInSeconds 缓存过期时间，单位秒
      * @return 新创建的缓存实例
      */
-    public <K, V> Cache<K, V> createCache(String key, CacheType cacheType, long expireInSeconds) {
+    public <K, V> Cache<K, V> createCache(String key, CacheType cacheType, int expireInSeconds) {
         QuickConfig config = QuickConfig
                 .newBuilder(key)
                 .cacheType(cacheType)
