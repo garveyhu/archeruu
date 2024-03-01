@@ -1,8 +1,17 @@
 <p align="center">
-	<a href="https://cn.archeruu.com/"><img src="http://124.220.51.225/images/archer/archeruu-logo.png" width="45%"></a>
+	<a href="https://cn.archeruu.com/"><img src="http://124.220.51.225/images/archer/archeruu-logo.png" width="45%" alt="logo"></a>
 </p>
 <p align="center">
 	<strong>🍡Reuse packages of various technology stacks, free from the pain of building wheels.</strong>
+</p>
+
+<p align="center">
+	<a target="_blank" href="https://central.sonatype.com/artifact/com.archeruu/archeruu-bom">
+		<img src="https://img.shields.io/maven-central/v/com.archeruu/archeruu-bom"  alt="maven"/>
+	</a>
+	<a target="_blank" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">
+		<img src="https://img.shields.io/badge/JDK-8+-green.svg"  alt="jdk8+"/>
+	</a>
 </p>
 
 ## 🐾简介
@@ -11,12 +20,12 @@ Archeruu是一个不断积累的工具库，对各种场景技术栈进行高可
 
 ## 🛠️包含组件
 
-| 模块           | 介绍                             |
-| -------------- | -------------------------------- |
-| archeruu-bom   | Archeruu模块清单                 |
-| archeruu-core  | 核心 |
-| archeruu-extra | 拓展                             |
-| archeruu-AI    | AI，包括ChatGPT等API操作         |
+| 模块             | 介绍                 |
+|----------------|--------------------|
+| archeruu-bom   | Archeruu模块清单       |
+| archeruu-core  | 核心                 |
+| archeruu-extra | 拓展                 |
+| archeruu-AI    | AI，包括ChatGPT等API操作 |
 
 可以根据需求对每个模块单独引入，也可以通过引入`archeruu-bom`方式引入所有模块。
 
