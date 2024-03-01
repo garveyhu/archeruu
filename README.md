@@ -14,7 +14,7 @@ Archeruu是一个不断积累的工具库，对各种场景技术栈进行高可
 | 模块           | 介绍                             |
 | -------------- | -------------------------------- |
 | archeruu-bom   | Archeruu模块清单                 |
-| archeruu-core  | 核心，提供初代版本大部分封装功能 |
+| archeruu-core  | 核心 |
 | archeruu-extra | 拓展                             |
 | archeruu-AI    | AI，包括ChatGPT等API操作         |
 
@@ -30,13 +30,13 @@ Archeruu是一个不断积累的工具库，对各种场景技术栈进行高可
 <dependency>
     <groupId>com.archeruu</groupId>
     <artifactId>archeruu-bom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
 ### 🍐Gradle
 
 ```
-implementation 'com.archeruu:archeruu-bom:1.0.0'
+implementation 'com.archeruu:archeruu-bom:1.0.2'
 ```
 
