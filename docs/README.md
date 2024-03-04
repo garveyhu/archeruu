@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://cn.archeruu.com/"><img src="http://124.220.51.225/images/archer/archeruu-logo.png" width="45%" alt="logo"></a>
+	<a href="https://cn.archeruu.com/"><img src="http://121.41.58.174/images/archer/archeruu-logo.png" width="45%" alt="logo"></a>
 </p>
 <p align="center">
 	<strong>🍡Reuse packages of various technology stacks, free from the pain of building wheels.</strong>
