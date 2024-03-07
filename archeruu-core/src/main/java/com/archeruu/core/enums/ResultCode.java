@@ -13,17 +13,14 @@ import lombok.Getter;
 public enum ResultCode {
 
     /* 成功状态码 */
-    SUCCESS(200, "操作成功！"),
+    SUCCESS(200, "操作成功( •̀ ω •́ )✧"),
 
     /* 失败状态码 */
-    FAIL(110, "操作失败！"),
-
-    /* 失败状态码 */
-    FAILURE(111, "自定义错误消息"),
+    FAIL(-1, "操作失败(╬▔皿▔)╯"),
 
     /* 系统错误 */
-    SYSTEM_INNER_ERROR(119, "系统内部错误"),
-    SERVER_ERROR(120, "当前服务不可用"),
+    SYSTEM_INNER_ERROR(500, "系统内部错误╰（‵□′）╯"),
+    SERVER_UNAVAILABLE(503, "服务不可用￣へ￣"),
 
     /* 参数校检异常 */
     PARAM_IS_INVALID(900, "参数无效"),
