@@ -19,12 +19,12 @@ public class CustomException extends RuntimeException {
     private final ResultCode resultCode;
 
     public CustomException(ResultCode resultCode) {
-        super(resultCode.getMsg());
+        super(resultCode.getMessage());
         this.resultCode = resultCode;
     }
 
     public CustomException(ResultCode resultCode, Object... args) {
-        super(MessageFormat.format(resultCode.getMsg(), args));
+        super(MessageFormat.format(resultCode.getMessage(), args));
         this.resultCode = resultCode;
     }
 
