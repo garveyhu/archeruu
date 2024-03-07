@@ -37,7 +37,7 @@ public enum ResultCode {
     /**
      * 状态提示
      */
-    private final String msg;
+    private final String message;
 
     /**
      * 状态码 -> 状态码类

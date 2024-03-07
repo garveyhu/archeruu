@@ -32,7 +32,7 @@ public class ResultVO<T> {
     /**
      * 状态提示
      */
-    private String msg;
+    private String message;
     /**
      * 总数
      */
@@ -44,36 +44,36 @@ public class ResultVO<T> {
      */
     private T data;
 
-    public ResultVO(boolean success, String msg) {
+    public ResultVO(boolean success, String message) {
         this.success = success;
-        this.msg = msg;
+        this.message = message;
     }
 
 
-    public ResultVO(boolean success, int code, String msg) {
+    public ResultVO(boolean success, int code, String message) {
         this.success = success;
         this.code = code;
-        this.msg = msg;
+        this.message = message;
     }
 
-    public ResultVO(boolean success, int code, String msg, T data) {
+    public ResultVO(boolean success, int code, String message, T data) {
         this.success = success;
         this.code = code;
-        this.msg = msg;
+        this.message = message;
         this.data = data;
     }
 
-    public ResultVO(boolean success, int code, String msg, T data, Integer total) {
+    public ResultVO(boolean success, int code, String message, T data, Integer total) {
         this.success = success;
         this.code = code;
-        this.msg = msg;
+        this.message = message;
         this.data = data;
         this.total = total;
     }
 
     public ResultVO(boolean success, ResultCode resultCode) {
         this.success = success;
-        this.msg = resultCode.getMsg();
+        this.message = resultCode.getMessage();
         this.code = resultCode.getCode();
     }
 
@@ -81,14 +81,14 @@ public class ResultVO<T> {
     public ResultVO(boolean success, ResultCode resultCode, T data) {
         this.success = success;
         this.code = resultCode.getCode();
-        this.msg = resultCode.getMsg();
+        this.message = resultCode.getMessage();
         this.data = data;
     }
 
     public ResultVO(boolean success, ResultCode resultCode, T data, Integer total) {
         this.success = success;
         this.code = resultCode.getCode();
-        this.msg = resultCode.getMsg();
+        this.message = resultCode.getMessage();
         this.data = data;
         this.total = total;
     }
@@ -97,12 +97,12 @@ public class ResultVO<T> {
         return new ResultVO<>();
     }
 
-    public static <T> ResultVO<T> create(boolean success, String msg) {
-        return new ResultVO<>(success, msg);
+    public static <T> ResultVO<T> create(boolean success, String message) {
+        return new ResultVO<>(success, message);
     }
 
-    public static <T> ResultVO<T> create(boolean success, String msg, T data) {
-        return new ResultVO<>(success, success ? ResultCode.SUCCESS.getCode() : ResultCode.FAIL.getCode(), msg, data);
+    public static <T> ResultVO<T> create(boolean success, String message, T data) {
+        return new ResultVO<>(success, success ? ResultCode.SUCCESS.getCode() : ResultCode.FAIL.getCode(), message, data);
     }
 
     public static <T> ResultVO<T> create(boolean success, T data) {
@@ -113,16 +113,16 @@ public class ResultVO<T> {
         return new ResultVO<>(success, success ? ResultCode.SUCCESS : ResultCode.FAIL, data, total.intValue());
     }
 
-    public static <T> ResultVO<T> create(boolean success, int code, String msg) {
-        return new ResultVO<>(success, code, msg);
+    public static <T> ResultVO<T> create(boolean success, int code, String message) {
+        return new ResultVO<>(success, code, message);
     }
 
-    public static <T> ResultVO<T> create(boolean success, int code, String msg, T data) {
-        return new ResultVO<>(success, code, msg, data);
+    public static <T> ResultVO<T> create(boolean success, int code, String message, T data) {
+        return new ResultVO<>(success, code, message, data);
     }
 
-    public static <T> ResultVO<T> create(boolean success, int code, String msg, T data, Long total) {
-        return new ResultVO<>(success, code, msg, data, total.intValue());
+    public static <T> ResultVO<T> create(boolean success, int code, String message, T data, Long total) {
+        return new ResultVO<>(success, code, message, data, total.intValue());
     }
 
     public static <T> ResultVO<T> create(boolean success, ResultCode resultCode) {
