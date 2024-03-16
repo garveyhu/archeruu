@@ -1,4 +1,4 @@
-![logo](http://121.41.58.174/images/archer/archeruu-icon.png)
+![logo](https://www.archeruu.com/images/archer/archeruu-icon.png)
 
 # Archeruu <small>1.0.2</small>
 
